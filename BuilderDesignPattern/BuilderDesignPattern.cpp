@@ -152,16 +152,20 @@ void BDPMain() {
 	//Create Director
 	DesktopDirector DD;
 	
+	//Create Builders
 	HPDesktopBuilder HPD;
 	DellDesktopBuilder DDB;
 	AcerDesktopBuilder ADB;
 	LenavoDesktopBuilder LDB;
 	
+	
+	//Take Reference of particular Builder by Director and All the steps will be executed
 	Desktop* hpdesktop = DD.createDesktop(&HPD);
 	Desktop* delldesktop = DD.createDesktop(&DDB);
 	Desktop* acerdesktop = DD.createDesktop(&ADB);
 	Desktop* lenavodesktop = DD.createDesktop(&LDB);
 
+	
 	hpdesktop->show();
 	delldesktop->show();
 	acerdesktop->show();
