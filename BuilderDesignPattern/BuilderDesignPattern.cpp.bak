@@ -152,11 +152,13 @@ void BDPMain() {
 	//Create Director
 	DesktopDirector DD;
 	
+	
 	HPDesktopBuilder HPD;
 	DellDesktopBuilder DDB;
 	AcerDesktopBuilder ADB;
-	LenavoDesktopBuilder LDB;
+	LenavoDesktopBuilder LDB
 	
+
 	Desktop* hpdesktop = DD.createDesktop(&HPD);
 	Desktop* delldesktop = DD.createDesktop(&DDB);
 	Desktop* acerdesktop = DD.createDesktop(&ADB);
