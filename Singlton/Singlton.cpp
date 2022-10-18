@@ -1,3 +1,13 @@
+//Defines a class that has only one interface and provides a glocal point of access to that interface
+/*
+	Requirements are :
+	1) One and only one instance
+	2) Global Access
+	3) No Ownership
+	4) Lazy Initialization
+	
+*/
+
 #include<iostream>
 #include<string>
 
@@ -18,7 +28,7 @@ public:
 	void setHeight(int height) { _height = height; }
 	void setBrightNess(int brightness) { _brightness = brightness; }
 
-	int getWidth() { return _width; }
+int getWidth() { return _width; }
 	int getHeight() { return _height; }
 	int getBrightNess() { return _brightness; }
 
